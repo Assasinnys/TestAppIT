@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestAppIT</string>
+    
+    <string name="title_welcome">Welcome to Saby</string>
+    <string name="title_use_two_phones">Use two phones as a baby monitor system</string>
+    <string name="btn_text_continue">Continue</string>
+</resources>

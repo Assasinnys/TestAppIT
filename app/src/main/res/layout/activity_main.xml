@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_saby"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/iv_saby_height"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/saby_01"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/welcome_top_margin"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center_horizontal|top"
+        android:text="@string/title_welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/welcome_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_use_two_phones"
+        android:layout_width="@dimen/two_phones_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/two_phones_start_end_margin"
+        android:layout_marginEnd="@dimen/two_phones_start_end_margin"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center_horizontal|top"
+        android:text="@string/title_use_two_phones"
+        android:textColor="@color/colorTextDark"
+        android:textSize="@dimen/two_phones_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_saby" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="@dimen/continue_width"
+        android:layout_height="@dimen/continue_height"
+        android:layout_marginBottom="@dimen/continue_bottom_margin"
+        android:background="@drawable/background_continue"
+        android:fontFamily="@font/gilroy"
+        android:text="@string/btn_text_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/continue_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dot_1"
+        android:layout_width="@dimen/point_size"
+        android:layout_height="@dimen/point_size"
+        android:layout_marginBottom="@dimen/point_margin_bottom"
+        android:background="@drawable/selector_dot"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dot_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dot_2"
+        android:layout_width="@dimen/point_size"
+        android:layout_height="@dimen/point_size"
+        android:layout_marginStart="@dimen/point_start_margin"
+        android:layout_marginBottom="@dimen/point_margin_bottom"
+        android:background="@drawable/selector_dot"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dot_3"
+        app:layout_constraintStart_toEndOf="@id/dot_1" />
+
+    <Button
+        android:id="@+id/dot_3"
+        android:layout_width="@dimen/point_size"
+        android:layout_height="@dimen/point_size"
+        android:layout_marginStart="@dimen/point_start_margin"
+        android:layout_marginBottom="@dimen/point_margin_bottom"
+        android:background="@drawable/selector_dot"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dot_4"
+        app:layout_constraintStart_toEndOf="@id/dot_2" />
+
+    <Button
+        android:id="@+id/dot_4"
+        android:layout_width="@dimen/point_size"
+        android:layout_height="@dimen/point_size"
+        android:layout_marginStart="@dimen/point_start_margin"
+        android:layout_marginBottom="@dimen/point_margin_bottom"
+        android:background="@drawable/selector_dot"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dot_3" />
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="@dimen/line_width"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginBottom="@dimen/line_bottom_margin"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

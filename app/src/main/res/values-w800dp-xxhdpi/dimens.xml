@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iv_saby_height">670dp</dimen>
+
+    <dimen name="welcome_top_margin">120dp</dimen>
+    <dimen name="welcome_width">390dp</dimen>
+    <dimen name="welcome_text_size">47sp</dimen>
+
+    <dimen name="two_phones_width">390dp</dimen>
+    <dimen name="two_phones_height">80dp</dimen>
+    <dimen name="two_phones_start_end_margin">30dp</dimen>
+    <dimen name="two_phones_text_size">34sp</dimen>
+
+    <dimen name="continue_bottom_margin">69dp</dimen>
+    <dimen name="continue_text_size">19sp</dimen>
+    <dimen name="continue_width">312dp</dimen>
+    <dimen name="continue_height">58dp</dimen>
+
+    <dimen name="point_margin_bottom">37dp</dimen>
+    <dimen name="point_size">8dp</dimen>
+    <dimen name="point_start_margin">19dp</dimen>
+
+    <dimen name="line_width">160dp</dimen>
+    <dimen name="line_height">6dp</dimen>
+    <dimen name="line_bottom_margin">10dp</dimen>
+</resources>
